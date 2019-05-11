@@ -2,7 +2,7 @@ var renkler = ["#A3323F", "#913B3B", "#8D5867", "#917F3B", "#487452", "#3B4791",
 var bulunannota = 0;
 var baruzunlugu = 16;
 var tempo = 120;
-if(window.location.href != "file:///C:/Users/Can/Desktop/VideoOyunVibes/index.html") {
+if(window.location.pathname != "/index.html") {
   urldennotarenderla();
 } else {
   //console.log("anasayfadasın")
@@ -77,7 +77,7 @@ function urlguncelle() {
     }
     yataysira++
   }))
-  kaydeturlkismi.value = "file:///C:/Users/Can/Desktop/VideoOyunVibes/index.html?gonderi/" + kisaomurluurl + "/" + tempo
+  kaydeturlkismi.value = "/index.html?gonderi/" + kisaomurluurl + "/" + tempo
 }
 /*
 window.onclick = function(e) {
