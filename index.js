@@ -9,14 +9,15 @@ if(window.location.href.includes('gonderi') == true) {
 }
 
 function urldennotarenderla() {
-  window.location.href.split("?");
-  for(var i = 1; i < window.location.href.split('?')[1].split('/')[1].split('&').length; i++) {
+  var düzelmisurl = decodeURIComponent(window.location.href)
+  düzelmisurl.split("?");
+  for(var i = 1; i < düzelmisurl.split('?')[1].split('/')[1].split('&').length; i++) {
     //    console.log(window.location.href.split('?')[1].split('/')[1].split('&')[i])
-    var satirinadi = window.location.href.split('?')[1].split('/')[1].split('&')[i].split(':')[0];
-    for(var a = 0; a < window.location.href.split('?')[1].split('/')[1].split('&')[i].split(':')[1].split(',').length - 1; a++) {
-      var notakolon = window.location.href.split('?')[1].split('/')[1].split('&')[i].split(':')[1].split(',')[a];
+    var satirinadi = düzelmisurl.split('?')[1].split('/')[1].split('&')[i].split(':')[0];
+    for(var a = 0; a < düzelmisurl.split('?')[1].split('/')[1].split('&')[i].split(':')[1].split(',').length - 1; a++) {
+      var notakolon = düzelmisurl.split('?')[1].split('/')[1].split('&')[i].split(':')[1].split(',')[a];
       //    console.log(window.location.href.split('?')[1].split('/')[1].split('&')[i].split(':')[1].split(',')[a]);
-      var tempo = window.location.href.split(",/")[1];
+      var tempo = düzelmisurl.split(",/")[1].split("&")[0]
       notayigercektenrenderla(parseInt(notakolon) + 1, parseInt(satirinadi), tempo)
     }
   }
