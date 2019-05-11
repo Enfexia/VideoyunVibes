@@ -2,7 +2,8 @@ var renkler = ["#A3323F", "#913B3B", "#8D5867", "#917F3B", "#487452", "#3B4791",
 var bulunannota = 0;
 var baruzunlugu = 16;
 var tempo = 120;
-if(window.location.pathname != "/VideoyunVibes/" && window.location.pathname != "/VideoyunVibes/index.html") {
+if(window.location.pathname == "/VideoyunVibes/" || window.location.pathname == "/index.html" || window.location.pathname == "/VideoyunVibes/index.html" || window.location.href.includes('gonderi') == true) {
+  console.log("dondu")
   urldennotarenderla();
 } else {
   //console.log("anasayfadasın")
@@ -77,7 +78,7 @@ function urlguncelle() {
     }
     yataysira++
   }))
-  kaydeturlkismi.value = "/index.html?gonderi/" + kisaomurluurl + "/" + tempo
+  kaydeturlkismi.value = window.location.host + "/index.html?gonderi/" + kisaomurluurl + "/" + tempo
 }
 /*
 window.onclick = function(e) {
