@@ -77,7 +77,7 @@ function urlguncelle() {
     }
     yataysira++
   }))
-  kaydeturlkismi.value = window.location.host + "/index.html?gonderi/" + kisaomurluurl + "/" + tempo
+  kaydeturlkismi.value = window.location.host + window.location.pathname + "?gonderi/" + kisaomurluurl + "/" + tempo
 }
 /*
 window.onclick = function(e) {
