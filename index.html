@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <div class="container">
+    <div class="onbosluk"></div>
+    <div class="dortbosluk">
+      <svg class="logo" viewBox="0 0 276 167" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M138 33L195.158 132H80.8423L138 33Z" fill="#FAFEFE"/>
+        <path d="M66 132L8.84233 33L123.158 33L66 132Z" fill="#FAFEFE"/>
+        <path d="M66 132L8.84233 33L123.158 33L66 132Z" fill="#FAFEFE"/>
+        <path d="M138 33L195.158 132H80.8423L138 33Z" fill="#FAFEFE"/>
+        <line x1="47.2273" y1="29.8624" x2="21.2273" y2="66.8624" stroke="#242424" stroke-width="3"/>
+        <line x1="82.2371" y1="29.8483" x2="34.2371" y2="99.8483" stroke="#242424" stroke-width="3"/>
+        <path d="M210 132L267.158 33L152.842 33L210 132Z" fill="#FAFEFE"/>
+        <line y1="-1.5" x2="45.2217" y2="-1.5" transform="matrix(0.574946 0.818192 0.818192 -0.574946 230 29)" stroke="#242424" stroke-width="3"/>
+        <line y1="-1.5" x2="84.8764" y2="-1.5" transform="matrix(0.565528 0.824729 0.824729 -0.565528 195 29)" stroke="#242424" stroke-width="3"/>
+        <line x1="47.2273" y1="29.8624" x2="21.2273" y2="66.8624" stroke="#242424" stroke-width="3"/>
+        <line x1="82.2371" y1="29.8483" x2="34.2371" y2="99.8483" stroke="#242424" stroke-width="3"/>
+        <line x1="152.302" y1="40.7457" x2="97.3015" y2="136.746" stroke="#242424" stroke-width="3"/>
+        <line x1="166.302" y1="69.7457" x2="111.302" y2="165.746" stroke="#242424" stroke-width="3"/>
+        <path d="M138.5 62L170.11 116.75H106.89L138.5 62Z" fill="#242424"/>
+      </svg>
+    </div>
+    <div class="onbosluk"></div>
+    <div class="ikibosluk"></div>
+    <div class="dortbosluk">
+      <div class="onaltigrid boyuazolcak">
+        <div class="onbirbosluk">
+        <div class="baslatbuton"  onclick="baslat(this)">
+          <svg viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 18V0L17 9L0 18Z" fill="#F1F1F1"/>
+          </svg>
+          <span>Başlat</span>
+        </div>
+        </div>
+        <div class="besbosluk">
+          <div class="kaydetbuton">
+            <svg class="kaydetsvg" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path class="kaydetsvg" d="M11.2523 2.25H13.5V6H11.2523V2.25ZM18 3V18H0V0H15L18 3ZM3.75 6.75H14.25V1.5H3.75V6.75ZM15.75 9.75H2.25V16.5H15.75V9.75Z" fill="#F1F1F1"/>
+            </svg>
+          </div>
+          <div class="kaydeturl">
+            <input class="paylasurl"  id="urlkismi" onClick="this.setSelectionRange(0, this.value.length)" type="url" readonly value="file:///C:/Users/Can/Desktop/VideoOyunVibes/index.html">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="ucbosluk">
+      <div class="bpmayarlama">
+        <div class="onaltigrid">
+          <div class="sekizbosluk">
+            <span class="bpmad">BPM:</span>
+          </div>
+          <div class="sekizbosluk">
+            <input id="bpmsayisi" type="number" value="120" oninput="javascript: if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" min="60" max="180" length="3" minLength="2" maxLength="3" class="bpmtutucu">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="onbosluk"></div>
+    <div class="ucbosluk"  onclick="hepsinisil()">
+      <div class="hepsinisilbuton">
+        <svg viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M18 15.822L11.7638 9.66522L17.9137 3.45372L15.141 0.680969L8.982 6.91947L2.7495 0.767219L0 3.51672L6.24075 9.69672L0.08625 15.9315L2.83575 18.681L9.0135 12.4425L15.2272 18.5947L18 15.822Z" fill="#F1F1F1"/>
+        </svg>
+        <span>Hepsini Sil</span>
+      </div>
+    </div>
+    <div class="ikibosluk"></div>
+
+    <!-- Beat SAyıları -->
+    <div class="ikibosluk"></div>
+    <div class="dortbosluk"></div>
+    <div class="onaltibosluk">
+      <div class="onaltigrid">
+        <div class="birbosluk notarakami"><span>1</span></div>
+        <div class="birbosluk notarakami"><span>2</span></div>
+        <div class="birbosluk notarakami"><span>3</span></div>
+        <div class="birbosluk notarakami"><span>4</span></div>
+        <div class="birbosluk notarakami"><span>5</span></div>
+        <div class="birbosluk notarakami"><span>6</span></div>
+        <div class="birbosluk notarakami"><span>7</span></div>
+        <div class="birbosluk notarakami"><span>8</span></div>
+        <div class="birbosluk notarakami"><span>9</span></div>
+        <div class="birbosluk notarakami"><span>10</span></div>
+        <div class="birbosluk notarakami"><span>11</span></div>
+        <div class="birbosluk notarakami"><span>12</span></div>
+        <div class="birbosluk notarakami"><span>13</span></div>
+        <div class="birbosluk notarakami"><span>14</span></div>
+        <div class="birbosluk notarakami"><span>15</span></div>
+        <div class="birbosluk notarakami"><span>16</span></div>
+      </div>
+    </div>
+    <div class="ikibosluk"></div>
+
+    <!-- Birinci Beat -->
+    <div class="ikibosluk"></div>
+    <div class="dortbosluk">
+      <div class="sestoplayici" style="background-color:#F83C50">
+        <span notasira="0:" class="nota_adi">
+          Abiii
+          <svg  onclick="new Audio('1.mp3').play()" class="sesdinlebuton" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.58333 9.49996C1.76463 4.73967 4.78325 0.791626 9.5 0.791626C14.2168 0.791626 17.2354 4.73967 17.4167 9.49996H15.8333C15.6307 5.60654 13.0316 3.14208 9.5 3.14921C5.96838 3.14208 3.36933 5.60654 3.16667 9.49996H1.58333ZM19 12.6975C19 11.8061 18.2772 11.0833 17.3858 11.0833H15.0417V18.2083H17.3858C18.2772 18.2083 19 17.4855 19 16.5941V12.6975ZM0 12.6975C0 11.8061 0.722792 11.0833 1.61421 11.0833H3.95833V18.2083H1.61421C0.722792 18.2083 0 17.4855 0 16.5941V12.6975Z" fill="#F1F1F1"/>
+          </svg>
+        </span>
+      </div>
+    </div>
+    <div class="onaltibosluk">
+      <div class="onaltigrid notasira">
+        <div class="birbosluk notakutusu" data-insturment="0"></div>
+        <div class="birbosluk notakutusu" data-insturment="0"></div>
+        <div class="birbosluk notakutusu" data-insturment="0"></div>
+        <div class="birbosluk notakutusu" data-insturment="0"></div>
+        <div class="birbosluk notakutusu" data-insturment="0"></div>
+        <div class="birbosluk notakutusu" data-insturment="0"></div>
+        <div class="birbosluk notakutusu" data-insturment="0"></div>
+        <div class="birbosluk notakutusu" data-insturment="0"></div>
+        <div class="birbosluk notakutusu" data-insturment="0"></div>
+        <div class="birbosluk notakutusu" data-insturment="0"></div>
+        <div class="birbosluk notakutusu" data-insturment="0"></div>
+        <div class="birbosluk notakutusu" data-insturment="0"></div>
+        <div class="birbosluk notakutusu" data-insturment="0"></div>
+        <div class="birbosluk notakutusu" data-insturment="0"></div>
+        <div class="birbosluk notakutusu" data-insturment="0"></div>
+        <div class="birbosluk notakutusu" data-insturment="0"></div>
+      </div>
+    </div>
+    <div class="ikibosluk"></div>
+    <!-- iki Beat -->
+    <div class="ikibosluk"></div>
+    <div class="dortbosluk">
+      <div class="sestoplayici" style="background-color:#FF5353">
+        <span notasira="1:" class="nota_adi">
+          Selam
+          <svg  onclick="new Audio('2.mp3').play()" class="sesdinlebuton" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.58333 9.49996C1.76463 4.73967 4.78325 0.791626 9.5 0.791626C14.2168 0.791626 17.2354 4.73967 17.4167 9.49996H15.8333C15.6307 5.60654 13.0316 3.14208 9.5 3.14921C5.96838 3.14208 3.36933 5.60654 3.16667 9.49996H1.58333ZM19 12.6975C19 11.8061 18.2772 11.0833 17.3858 11.0833H15.0417V18.2083H17.3858C18.2772 18.2083 19 17.4855 19 16.5941V12.6975ZM0 12.6975C0 11.8061 0.722792 11.0833 1.61421 11.0833H3.95833V18.2083H1.61421C0.722792 18.2083 0 17.4855 0 16.5941V12.6975Z" fill="#F1F1F1"/>
+          </svg>
+        </span>
+      </div>
+    </div>
+    <div class="onaltibosluk">
+      <div class="onaltigrid notasira">
+        <div class="birbosluk notakutusu" data-insturment="1"></div>
+        <div class="birbosluk notakutusu" data-insturment="1"></div>
+        <div class="birbosluk notakutusu" data-insturment="1"></div>
+        <div class="birbosluk notakutusu" data-insturment="1"></div>
+        <div class="birbosluk notakutusu" data-insturment="1"></div>
+        <div class="birbosluk notakutusu" data-insturment="1"></div>
+        <div class="birbosluk notakutusu" data-insturment="1"></div>
+        <div class="birbosluk notakutusu" data-insturment="1"></div>
+        <div class="birbosluk notakutusu" data-insturment="1"></div>
+        <div class="birbosluk notakutusu" data-insturment="1"></div>
+        <div class="birbosluk notakutusu" data-insturment="1"></div>
+        <div class="birbosluk notakutusu" data-insturment="1"></div>
+        <div class="birbosluk notakutusu" data-insturment="1"></div>
+        <div class="birbosluk notakutusu" data-insturment="1"></div>
+        <div class="birbosluk notakutusu" data-insturment="1"></div>
+        <div class="birbosluk notakutusu" data-insturment="1"></div>
+      </div>
+    </div>
+    <div class="ikibosluk"></div>
+    <!-- uc Beat -->
+    <div class="ikibosluk"></div>
+    <div class="dortbosluk">
+      <div class="sestoplayici" style="background-color:#F68CAA">
+        <span notasira="2:" class="nota_adi">
+          Bomba
+          <svg onclick="new Audio('3.mp3').play()" class="sesdinlebuton" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.58333 9.49996C1.76463 4.73967 4.78325 0.791626 9.5 0.791626C14.2168 0.791626 17.2354 4.73967 17.4167 9.49996H15.8333C15.6307 5.60654 13.0316 3.14208 9.5 3.14921C5.96838 3.14208 3.36933 5.60654 3.16667 9.49996H1.58333ZM19 12.6975C19 11.8061 18.2772 11.0833 17.3858 11.0833H15.0417V18.2083H17.3858C18.2772 18.2083 19 17.4855 19 16.5941V12.6975ZM0 12.6975C0 11.8061 0.722792 11.0833 1.61421 11.0833H3.95833V18.2083H1.61421C0.722792 18.2083 0 17.4855 0 16.5941V12.6975Z" fill="#F1F1F1"/>
+          </svg>
+        </span>
+      </div>
+    </div>
+    <div class="onaltibosluk">
+      <div class="onaltigrid notasira">
+        <div class="birbosluk notakutusu" data-insturment="2"></div>
+        <div class="birbosluk notakutusu" data-insturment="2"></div>
+        <div class="birbosluk notakutusu" data-insturment="2"></div>
+        <div class="birbosluk notakutusu" data-insturment="2"></div>
+        <div class="birbosluk notakutusu" data-insturment="2"></div>
+        <div class="birbosluk notakutusu" data-insturment="2"></div>
+        <div class="birbosluk notakutusu" data-insturment="2"></div>
+        <div class="birbosluk notakutusu" data-insturment="2"></div>
+        <div class="birbosluk notakutusu" data-insturment="2"></div>
+        <div class="birbosluk notakutusu" data-insturment="2"></div>
+        <div class="birbosluk notakutusu" data-insturment="2"></div>
+        <div class="birbosluk notakutusu" data-insturment="2"></div>
+        <div class="birbosluk notakutusu" data-insturment="2"></div>
+        <div class="birbosluk notakutusu" data-insturment="2"></div>
+        <div class="birbosluk notakutusu" data-insturment="2"></div>
+        <div class="birbosluk notakutusu" data-insturment="2"></div>
+      </div>
+    </div>
+    <div class="ikibosluk"></div>
+    <!-- Dort Beat -->
+    <div class="ikibosluk"></div>
+    <div class="dortbosluk">
+      <div class="sestoplayici" style="background-color:#D4B649">
+        <span notasira="3:" class="nota_adi">
+          Kapııı
+          <svg  onclick="new Audio('4.mp3').play()" class="sesdinlebuton" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.58333 9.49996C1.76463 4.73967 4.78325 0.791626 9.5 0.791626C14.2168 0.791626 17.2354 4.73967 17.4167 9.49996H15.8333C15.6307 5.60654 13.0316 3.14208 9.5 3.14921C5.96838 3.14208 3.36933 5.60654 3.16667 9.49996H1.58333ZM19 12.6975C19 11.8061 18.2772 11.0833 17.3858 11.0833H15.0417V18.2083H17.3858C18.2772 18.2083 19 17.4855 19 16.5941V12.6975ZM0 12.6975C0 11.8061 0.722792 11.0833 1.61421 11.0833H3.95833V18.2083H1.61421C0.722792 18.2083 0 17.4855 0 16.5941V12.6975Z" fill="#F1F1F1"/>
+          </svg>
+        </span>
+      </div>
+    </div>
+    <div class="onaltibosluk">
+      <div class="onaltigrid notasira">
+        <div class="birbosluk notakutusu" data-insturment="3"></div>
+        <div class="birbosluk notakutusu" data-insturment="3"></div>
+        <div class="birbosluk notakutusu" data-insturment="3"></div>
+        <div class="birbosluk notakutusu" data-insturment="3"></div>
+        <div class="birbosluk notakutusu" data-insturment="3"></div>
+        <div class="birbosluk notakutusu" data-insturment="3"></div>
+        <div class="birbosluk notakutusu" data-insturment="3"></div>
+        <div class="birbosluk notakutusu" data-insturment="3"></div>
+        <div class="birbosluk notakutusu" data-insturment="3"></div>
+        <div class="birbosluk notakutusu" data-insturment="3"></div>
+        <div class="birbosluk notakutusu" data-insturment="3"></div>
+        <div class="birbosluk notakutusu" data-insturment="3"></div>
+        <div class="birbosluk notakutusu" data-insturment="3"></div>
+        <div class="birbosluk notakutusu" data-insturment="3"></div>
+        <div class="birbosluk notakutusu" data-insturment="3"></div>
+        <div class="birbosluk notakutusu" data-insturment="3"></div>
+      </div>
+    </div>
+    <div class="ikibosluk"></div>
+    <!-- Beş Beat -->
+    <div class="ikibosluk"></div>
+    <div class="dortbosluk">
+      <div class="sestoplayici" style="background-color:#6CC580">
+        <span notasira="4:" class="nota_adi">
+          Gül
+          <svg onclick="new Audio('5.mp3').play()" class="sesdinlebuton" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.58333 9.49996C1.76463 4.73967 4.78325 0.791626 9.5 0.791626C14.2168 0.791626 17.2354 4.73967 17.4167 9.49996H15.8333C15.6307 5.60654 13.0316 3.14208 9.5 3.14921C5.96838 3.14208 3.36933 5.60654 3.16667 9.49996H1.58333ZM19 12.6975C19 11.8061 18.2772 11.0833 17.3858 11.0833H15.0417V18.2083H17.3858C18.2772 18.2083 19 17.4855 19 16.5941V12.6975ZM0 12.6975C0 11.8061 0.722792 11.0833 1.61421 11.0833H3.95833V18.2083H1.61421C0.722792 18.2083 0 17.4855 0 16.5941V12.6975Z" fill="#F1F1F1"/>
+          </svg>
+        </span>
+      </div>
+    </div>
+    <div class="onaltibosluk">
+      <div class="onaltigrid notasira">
+        <div class="birbosluk notakutusu" data-insturment="4"></div>
+        <div class="birbosluk notakutusu" data-insturment="4"></div>
+        <div class="birbosluk notakutusu" data-insturment="4"></div>
+        <div class="birbosluk notakutusu" data-insturment="4"></div>
+        <div class="birbosluk notakutusu" data-insturment="4"></div>
+        <div class="birbosluk notakutusu" data-insturment="4"></div>
+        <div class="birbosluk notakutusu" data-insturment="4"></div>
+        <div class="birbosluk notakutusu" data-insturment="4"></div>
+        <div class="birbosluk notakutusu" data-insturment="4"></div>
+        <div class="birbosluk notakutusu" data-insturment="4"></div>
+        <div class="birbosluk notakutusu" data-insturment="4"></div>
+        <div class="birbosluk notakutusu" data-insturment="4"></div>
+        <div class="birbosluk notakutusu" data-insturment="4"></div>
+        <div class="birbosluk notakutusu" data-insturment="4"></div>
+        <div class="birbosluk notakutusu" data-insturment="4"></div>
+        <div class="birbosluk notakutusu" data-insturment="4"></div>
+      </div>
+    </div>
+    <div class="ikibosluk"></div>
+    <!-- Altıncı Beat -->
+    <div class="ikibosluk"></div>
+    <div class="dortbosluk">
+      <div class="sestoplayici" style="background-color:#53D6FF">
+        <span notasira="5:" class="nota_adi">
+          Tendenz
+          <svg onclick="new Audio('6.mp3').play()" class="sesdinlebuton" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.58333 9.49996C1.76463 4.73967 4.78325 0.791626 9.5 0.791626C14.2168 0.791626 17.2354 4.73967 17.4167 9.49996H15.8333C15.6307 5.60654 13.0316 3.14208 9.5 3.14921C5.96838 3.14208 3.36933 5.60654 3.16667 9.49996H1.58333ZM19 12.6975C19 11.8061 18.2772 11.0833 17.3858 11.0833H15.0417V18.2083H17.3858C18.2772 18.2083 19 17.4855 19 16.5941V12.6975ZM0 12.6975C0 11.8061 0.722792 11.0833 1.61421 11.0833H3.95833V18.2083H1.61421C0.722792 18.2083 0 17.4855 0 16.5941V12.6975Z" fill="#F1F1F1"/>
+          </svg>
+        </span>
+      </div>
+    </div>
+    <div class="onaltibosluk">
+      <div class="onaltigrid notasira">
+        <div class="birbosluk notakutusu" data-insturment="5"></div>
+        <div class="birbosluk notakutusu"data-insturment="5"></div>
+        <div class="birbosluk notakutusu"data-insturment="5"></div>
+        <div class="birbosluk notakutusu"data-insturment="5"></div>
+        <div class="birbosluk notakutusu"data-insturment="5"></div>
+        <div class="birbosluk notakutusu"data-insturment="5"></div>
+        <div class="birbosluk notakutusu"data-insturment="5"></div>
+        <div class="birbosluk notakutusu"data-insturment="5"></div>
+        <div class="birbosluk notakutusu"data-insturment="5"></div>
+        <div class="birbosluk notakutusu"data-insturment="5"></div>
+        <div class="birbosluk notakutusu"data-insturment="5"></div>
+        <div class="birbosluk notakutusu"data-insturment="5"></div>
+        <div class="birbosluk notakutusu"data-insturment="5"></div>
+        <div class="birbosluk notakutusu"data-insturment="5"></div>
+        <div class="birbosluk notakutusu"data-insturment="5"></div>
+        <div class="birbosluk notakutusu"data-insturment="5"></div>
+      </div>
+    </div>
+    <div class="ikibosluk"></div>
+    <!-- Yedinci Beat -->
+    <div class="ikibosluk"></div>
+    <div class="dortbosluk">
+      <div class="sestoplayici" style="background-color:#536AFF">
+        <span notasira="6:" class="nota_adi">
+          Hayda
+          <svg onclick="new Audio('7.mp3').play()" class="sesdinlebuton" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.58333 9.49996C1.76463 4.73967 4.78325 0.791626 9.5 0.791626C14.2168 0.791626 17.2354 4.73967 17.4167 9.49996H15.8333C15.6307 5.60654 13.0316 3.14208 9.5 3.14921C5.96838 3.14208 3.36933 5.60654 3.16667 9.49996H1.58333ZM19 12.6975C19 11.8061 18.2772 11.0833 17.3858 11.0833H15.0417V18.2083H17.3858C18.2772 18.2083 19 17.4855 19 16.5941V12.6975ZM0 12.6975C0 11.8061 0.722792 11.0833 1.61421 11.0833H3.95833V18.2083H1.61421C0.722792 18.2083 0 17.4855 0 16.5941V12.6975Z" fill="#F1F1F1"/>
+          </svg>
+        </span>
+      </div>
+    </div>
+    <div class="onaltibosluk">
+      <div class="onaltigrid notasira">
+        <div class="birbosluk notakutusu"  data-insturment="6"></div>
+        <div class="birbosluk notakutusu" data-insturment="6"></div>
+        <div class="birbosluk notakutusu" data-insturment="6"></div>
+        <div class="birbosluk notakutusu" data-insturment="6"></div>
+        <div class="birbosluk notakutusu"data-insturment="6"></div>
+        <div class="birbosluk notakutusu"data-insturment="6"></div>
+        <div class="birbosluk notakutusu"data-insturment="6"></div>
+        <div class="birbosluk notakutusu"data-insturment="6"></div>
+        <div class="birbosluk notakutusu"data-insturment="6"></div>
+        <div class="birbosluk notakutusu"data-insturment="6"></div>
+        <div class="birbosluk notakutusu"data-insturment="6"></div>
+        <div class="birbosluk notakutusu"data-insturment="6"></div>
+        <div class="birbosluk notakutusu"data-insturment="6"></div>
+        <div class="birbosluk notakutusu"data-insturment="6"></div>
+        <div class="birbosluk notakutusu"data-insturment="6"></div>
+        <div class="birbosluk notakutusu"data-insturment="6"></div>
+      </div>
+    </div>
+    <div class="ikibosluk"></div>
+    <!-- Sekizinci Beat -->
+    <div class="ikibosluk"></div>
+    <div class="dortbosluk">
+      <div class="sestoplayici" style="background-color:#BE53FF">
+        <span notasira="7:" class="nota_adi">
+          Karr
+          <svg onclick="new Audio('8.mp3').play()" class="sesdinlebuton" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.58333 9.49996C1.76463 4.73967 4.78325 0.791626 9.5 0.791626C14.2168 0.791626 17.2354 4.73967 17.4167 9.49996H15.8333C15.6307 5.60654 13.0316 3.14208 9.5 3.14921C5.96838 3.14208 3.36933 5.60654 3.16667 9.49996H1.58333ZM19 12.6975C19 11.8061 18.2772 11.0833 17.3858 11.0833H15.0417V18.2083H17.3858C18.2772 18.2083 19 17.4855 19 16.5941V12.6975ZM0 12.6975C0 11.8061 0.722792 11.0833 1.61421 11.0833H3.95833V18.2083H1.61421C0.722792 18.2083 0 17.4855 0 16.5941V12.6975Z" fill="#F1F1F1"/>
+          </svg>
+        </span>
+      </div>
+    </div>
+    <div class="onaltibosluk">
+      <div class="onaltigrid notasira">
+        <div class="birbosluk notakutusu" data-insturment="7"></div>
+        <div class="birbosluk notakutusu" data-insturment="7"></div>
+        <div class="birbosluk notakutusu" data-insturment="7"></div>
+        <div class="birbosluk notakutusu" data-insturment="7"></div>
+        <div class="birbosluk notakutusu"data-insturment="7"></div>
+        <div class="birbosluk notakutusu"data-insturment="7"></div>
+        <div class="birbosluk notakutusu"data-insturment="7"></div>
+        <div class="birbosluk notakutusu"data-insturment="7"></div>
+        <div class="birbosluk notakutusu"data-insturment="7"></div>
+        <div class="birbosluk notakutusu"data-insturment="7"></div>
+        <div class="birbosluk notakutusu"data-insturment="7"></div>
+        <div class="birbosluk notakutusu"data-insturment="7"></div>
+        <div class="birbosluk notakutusu"data-insturment="7"></div>
+        <div class="birbosluk notakutusu"data-insturment="7"></div>
+        <div class="birbosluk notakutusu"data-insturment="7"></div>
+        <div class="birbosluk notakutusu"data-insturment="7"></div>
+      </div>
+    </div>
+    <div class="ikibosluk"></div>
+  </div>
+  <script src="index.js" charset="utf-8"></script>
+</body>
+</html>

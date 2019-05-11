@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:700&subset=latin-ext');
+body{
+  background: #242424;
+font-family: 'Roboto', sans-serif;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(24,1fr);
+/*    /* height: 100%; */
+    left: 0px;
+    top: 0;
+}
+
+.onaltigrid{
+    display: grid;
+    grid-template-columns: repeat(16,1fr);
+    height: 100%;
+    left: 0px;
+    top: 0;
+}
+
+
+.birbosluk{
+ grid-column: span 1;
+}
+
+.ikibosluk{
+ grid-column: span 2;
+}
+
+.ucbosluk{
+ grid-column: span 3;
+}
+
+
+.besbosluk{
+  grid-column: span 5;
+
+}
+
+.sekizbosluk{
+  grid-column: span 8;
+
+}
+
+.dokuzbosluk{
+  grid-column: span 9;
+
+}
+.dortbosluk{
+  grid-column: span 4;
+  height: 100%;
+}
+
+.onbosluk{
+  grid-column: span 10;
+}
+
+.dortbosluk{
+  grid-column: span 4;
+}
+
+.onbirbosluk{
+  grid-column: span 11;
+}
+.onikibosluk{
+  grid-column: span 12;
+}
+
+.onaltibosluk{
+  grid-column: span 16;
+}
+
+.notakutusu{
+  width: 95%;
+  height: 95%;
+  background-color: blue;
+}
+
+.notarakami{
+  padding: 0.7vw;
+  text-align: center;
+  font-size: 1.6vw;
+}
+
+.logo{
+  height: 8vw;
+}
+
+.flex{
+  text-align: center;
+  display: flex;
+justify-content: center; /* align horizontal */
+align-items: center;
+}
+
+.baslatbuton, .kaydetbuton,.bpmayarlama,.hepsinisilbuton{
+  font-size: 1.5vw;
+  text-align: center;
+  display: flex;
+justify-content: center; /* align horizontal */
+align-items: center;
+background-color: #2E2E2E;
+border-radius: 15px;
+padding-top: 1.4vw;
+padding-bottom: 1.4vw;
+color: #F1F1F1;
+    cursor: pointer;
+}
+
+.baslatbuton:hover, .kaydetbuton:hover,.bpmayarlama:hover,.hepsinisilbuton:hover{
+background-color:#3E3E3E;
+border-radius: 5px;
+transition: 0.5s all;
+}
+
+.baslatbuton{
+  width: 100%;
+}
+
+.kaydetbuton{
+    padding: unset;
+    height: 100%;
+    width: 90%;
+float: right;
+margin-bottom: 1vw;
+}
+
+
+.notakutusu{
+  border-radius: 15px;
+  background-color: #2E2E2E;
+  height: 90%;
+  cursor: pointer;
+}
+
+.notarakami{
+  color: #454545;
+}
+
+.baslatbuton svg, .kaydetbuton svg,.hepsinisilbuton svg{
+ width:1.1vw;
+ height:1.2vw;
+
+}
+.baslatbuton svg,.hepsinisilbuton svg{
+ width:1.1vw;
+ height:1.2vw;
+ margin-right: 5px
+}
+
+.sestoplayici{
+  width: 95%;
+  height: 90%;
+    background-color: pink;
+
+    border-radius: 15px;
+}
+
+.sessecicon{
+width: 2vw;
+float: right;
+    margin-right: 1vw;
+height: 100%;
+}
+
+
+.boyuazolcak{
+  width: 95%;
+}
+
+.bpmad{
+  color: #707070;
+      float: right;
+}
+
+.tempocu{
+  background-color: #5E5E5E;
+}
+body div div:nth-child(16) div div[aktif]{
+background-color: #A3323F!important;
+}
+body div div:nth-child(20) div div[aktif]{
+background-color: #913B3B!important;
+}
+body div div:nth-child(24) div div[aktif]{
+background-color: #8D5867!important;
+}
+body div div:nth-child(28) div div[aktif]{
+background-color: #917F3B!important;
+}
+body div div:nth-child(32) div div[aktif]{
+background-color: #487452!important;
+}
+body div div:nth-child(36) div div[aktif]{
+background-color: #3B4791!important;
+}
+body div div:nth-child(40) div div[aktif]{
+background-color: #3B7D91!important;
+}
+body div div:nth-child(44) div div[aktif]{
+background-color: #713B91!important;
+}
+
+body div div:nth-child(16) div div[alevli]{
+background-color: #F83C50!important;
+}
+body div div:nth-child(20) div div[alevli]{
+background-color: #FF5353!important;
+}
+body div div:nth-child(24) div div[alevli]{
+background-color: #F68CAA!important;
+}
+body div div:nth-child(28) div div[alevli]{
+background-color: #FFD953!important;
+}
+body div div:nth-child(32) div div[alevli]{
+background-color: #6CC580!important;
+}
+body div div:nth-child(36) div div[alevli]{
+background-color: #53D6FF!important;
+}
+body div div:nth-child(40) div div[alevli]{
+background-color: #536AFF!important;
+}
+body div div:nth-child(44) div div[alevli]{
+background-color: #BE53FF!important;
+}
+
+.secis{
+  width: 100%;
+  margin-top: 1.5vw;
+  margin-bottom: 1.8vw;
+  border: none;
+  color: #2E2E2E;
+  border:0;
+  background:none;
+  border:none;
+  cursor: pointer;
+  font-size: 1.5vw;
+}
+select:focus > option:checked
+{ color: #F1F1F1 !important;}
+
+option:focus
+{ background-color: #7ACFFF !important; }
+.secis:focus {outline:0;}
+
+.bpmtutucu{
+  border:none;
+  background-image:none;
+  background-color:transparent;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+      font-size: 1.5vw;
+      width: 80%;
+      color: #707070;
+}
+
+.bpmtutucu input[type=number]::-webkit-inner-spin-button,
+.bpmtutucu input[type=number]::-webkit-outer-spin-button {
+
+   opacity: 1;
+
+}
+
+.paylasurl{
+  border: none;
+  background-image:none;
+  background-color:transparent;
+
+  color: #F1F1F1;
+  -webkit-box-shadow: 0px 0px 22px 0px rgba(16,16,16,1);
+  -moz-box-shadow: 0px 0px 22px 0px rgba(16,16,16,1);
+  box-shadow: 0px 0px 22px 0px rgba(16,16,16,1);
+  font-size: 1.5vw;
+  background-color: white;
+  padding: 0.8vw;
+  background-color: #2E2E2E;
+  border-radius: 15px;
+  position: absolute;
+  width: 38vw;
+  margin-left: 1vw;
+  margin-top: 5.5vw;
+  display: none;
+}
+
+.sesdinlebuton{
+  height: 1.4vw;
+  width: 1.4vw;
+  float: right;
+      margin-top: 0.5vw;
+color: #F1F1F1;
+    cursor: pointer;
+    margin-right: 0.8vw;
+}
+
+.nota_adi{
+float: left;
+  font-size: 2vw;
+  padding: 1vw 1.2vw 1.2vw 1.2vw;
+width: 85%;
+color: #F1F1F1;
+}
