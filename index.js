@@ -2,8 +2,7 @@ var renkler = ["#A3323F", "#913B3B", "#8D5867", "#917F3B", "#487452", "#3B4791",
 var bulunannota = 0;
 var baruzunlugu = 16;
 var tempo = 120;
-if(window.location.pathname == "/VideoyunVibes/" || window.location.pathname == "/index.html" || window.location.pathname == "/VideoyunVibes/index.html" || window.location.href.includes('gonderi') == true) {
-  console.log("dondu")
+if(window.location.href.includes('gonderi') == true) {
   urldennotarenderla();
 } else {
   //console.log("anasayfadasın")
